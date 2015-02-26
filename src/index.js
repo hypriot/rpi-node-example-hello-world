@@ -6,7 +6,7 @@ var PORT = 80;
 // App
 var app = express();
 app.get('/', function (req, res) {
-  res.send('Hello world :-) \n\n Check out more jumpstart examples here: blog.hypriot.com');
+  res.send('Hello world :-) Check out more jump start examples here: blog.hypriot.com'\n);
 });
 
 app.listen(PORT);

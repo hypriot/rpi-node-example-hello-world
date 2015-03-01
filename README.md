@@ -7,6 +7,36 @@ How to use: <Link to blog series>
 
 Based on: https://docs.docker.com/examples/nodejs_web_app/
 
+## Building the image
+
+On your Raspberry Pi you can clone this example with
+
+```bash
+$ git clone https://github.com/hypriot/rpi-node-example-hello-world.git
+```
+
+Then build the Docker image with
+
+```bash
+$ docker build -t node-hello .
+```
+
+## Running the example
+
+Now run the example web server with
+
+```bash
+$ docker run -p 80:80 -d node-hello
+```
+
+## Test it
+
+On your computer open a web browser or use `curl` to connect to your Raspberry Pi running the hello world container.
+
+```bash
+open http://ip-of-your-raspberry-pi
+curl http://ip-of-your-raspberry-pi
+```
 
 ## License
 

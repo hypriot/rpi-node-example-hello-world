@@ -13,6 +13,7 @@ On your Raspberry Pi you can clone this example with
 
 ```bash
 $ git clone https://github.com/hypriot/rpi-node-example-hello-world.git
+$ cd rpi-node-example-hello-world
 ```
 
 Then build the Docker image with

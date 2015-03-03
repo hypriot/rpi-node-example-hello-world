@@ -6,7 +6,7 @@ var PORT = 80;
 // App
 var app = express();
 app.get('/', function (req, res) {
-  res.sendFile('/src/index.html');
+  res.sendFile('./index.html');
 });
 
 app.listen(PORT);

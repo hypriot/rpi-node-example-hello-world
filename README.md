@@ -1,5 +1,7 @@
 # Node.js Hello World example for the Raspberry Pi
 
+[![Join the chat at https://gitter.im/hypriot/rpi-node-example-hello-world](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/hypriot/rpi-node-example-hello-world?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A 10-minutes example on how to get a simple Node.js app up and running.
 In the end, you can point your Browser to the IP of your Pi and see a running webserver!
 

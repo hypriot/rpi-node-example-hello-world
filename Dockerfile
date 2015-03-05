@@ -4,11 +4,14 @@ MAINTAINER Mathias Renner <mathias@hypriot.com>
 # Adding source files into container
 ADD src/ /src
 
+# Define working directory
+WORKDIR /src
+
 # Install app dependencies
-RUN cd /src; npm install
+RUN npm install
 
 # Open Port 80
 EXPOSE 80
 
 # Run Node.js
-CMD ["node", "/src/index.js"]
+CMD ["node", "index.js"]

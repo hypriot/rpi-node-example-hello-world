@@ -1,0 +1,23 @@
+weba:
+  image: node-hello
+  expose:
+    - 80
+
+webb:
+  image: node-hello
+  expose:
+    - 80
+
+haproxy:
+  image: haproxy
+  volumes:
+   - haproxy:/haproxy-override
+  links:
+   - weba
+   - webb
+  ports:
+   - "80:80"
+   - "70:70"
+
+  expose:
+   - "80"

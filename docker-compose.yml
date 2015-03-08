@@ -8,6 +8,11 @@ webb:
   expose:
     - 80
 
+webc:
+  image: node-hello
+  expose:
+    - 80
+
 haproxy:
   image: hypriot/rpi-haproxy
   volumes:
@@ -15,9 +20,11 @@ haproxy:
   links:
    - weba
    - webb
+   - webc
   ports:
    - "80:80"
    - "70:70"
 
   expose:
    - "80"
+   - "70"

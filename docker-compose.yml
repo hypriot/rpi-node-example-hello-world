@@ -9,7 +9,7 @@ webb:
     - 80
 
 haproxy:
-  image: haproxy
+  image: hypriot/rpi-haproxy
   volumes:
    - haproxy:/haproxy-override
   links:

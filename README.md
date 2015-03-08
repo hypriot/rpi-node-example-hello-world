@@ -44,6 +44,8 @@ curl http://ip-of-your-raspberry-pi
 Now we run two instances of the Node.js hello world example behind a haproxy
 that will do load balancing.
 
+The containers and how they are connected are described in the `docker-compose.yml` file.
+
 ## Install docker-compose
 
 ```bash

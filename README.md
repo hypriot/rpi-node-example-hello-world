@@ -41,7 +41,7 @@ curl http://ip-of-your-raspberry-pi
 
 ## Run a loadbalancer
 
-Now we run two instances of the Node.js hello world example behind a haproxy
+Now we run three instances of the Node.js hello world example behind a haproxy
 that will do load balancing.
 
 The containers and how they are connected are described in the `docker-compose.yml` file.
@@ -68,10 +68,11 @@ open http://ip-of-your-raspberry-pi
 curl http://ip-of-your-raspberry-pi
 ```
 
-Locally you can check the stats of haproxy with
+You also can check the stats of haproxy with
 
 ```bash
-curl http://localhost:70
+open http://ip-of-your-raspberry-pi:70
+curl http://ip-of-your-raspberry-pi:70
 ```
 
 ## License

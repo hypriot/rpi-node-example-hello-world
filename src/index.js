@@ -11,7 +11,8 @@ var app = express();
 // app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
-- res.sendFile('/src/index.html');
+  res.send('<html><body>Hello from Node.js container. <a href="http://blog.hypriot.com">blog.hypriot.com</a></body></html>');
+  // res.sendFile('/src/index.html');
 });
 
 app.listen(PORT);

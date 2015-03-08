@@ -39,6 +39,39 @@ open http://ip-of-your-raspberry-pi
 curl http://ip-of-your-raspberry-pi
 ```
 
+## Run a loadbalancer
+
+Now we run two instances of the Node.js hello world example behind a haproxy
+that will do load balancing.
+
+## Install docker-compose
+
+```bash
+curl -L https://github.com/hypriot/compose/releases/download/1.1.0-raspbian/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+```
+
+## Run the balanced app
+
+```bash
+docker-compose up
+```
+
+## Test it
+
+On your computer open a web browser or use `curl` to connect to your Raspberry Pi running the load balanced hello world containers.
+
+```bash
+open http://ip-of-your-raspberry-pi
+curl http://ip-of-your-raspberry-pi
+```
+
+Locally you can check the stats of haproxy with
+
+```bash
+curl http://localhost:70
+```
+
 ## License
 
 The MIT License (MIT)

@@ -34,7 +34,6 @@ $ docker run -p 80:80 -d node-hello
 On your computer open a web browser and type `http://localhost:80` or use `curl` to connect to your the hello world container on the Pi.
 
 ```bash
-open http://ip-of-your-raspberry-pi
 curl http://ip-of-your-raspberry-pi
 ```
 

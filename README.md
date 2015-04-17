@@ -5,7 +5,8 @@ In the end, you can point your Browser to the IP of your Pi and see a running we
 
 Based on: https://docs.docker.com/examples/nodejs_web_app/
 
-## Building the image
+## How to use in 3 steps
+### Step 1: Build the image
 
 On your Raspberry Pi you can clone this example with
 
@@ -20,17 +21,17 @@ Then build the Docker image with
 $ docker build -t node-hello .
 ```
 
-## Running the example
+### Step 2: Run the container
 
-Now run the example web server with
+Now run the container with
 
 ```bash
 $ docker run -p 80:80 -d node-hello
 ```
 
-## Test it
+### Step 3: Test it
 
-On your computer open a web browser or use `curl` to connect to your Raspberry Pi running the hello world container.
+On your computer open a web browser and type `http://localhost:80` or use `curl` to connect to your the hello world container on the Pi.
 
 ```bash
 open http://ip-of-your-raspberry-pi
